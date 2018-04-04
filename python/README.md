@@ -1,4 +1,4 @@
-# 2D Ising Model in Python 
+# 2D Ising Model in Python
 
 ## New Features
 * Command line interface to input simulation parameters
