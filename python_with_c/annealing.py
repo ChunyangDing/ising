@@ -11,7 +11,7 @@ def T_anneal(T, ii, num_steps, num_burnin):
 	else:
 		T_a = T
 
-	print(T_a)
+	#print(T_a)
 	return float(T_a)
 
 def B_anneal(B, ii, num_steps, num_burnin):
@@ -20,7 +20,7 @@ def B_anneal(B, ii, num_steps, num_burnin):
     
 	B_start = 10
 	if (num_burnin > 0) and (ii < num_burnin):
-		alpha = np.exp( np.log(B/B_start) / num_burnin )
+		alpha = np.exp( np.log((B+0.01)/B_start) / num_burnin )
 		B_a = B_start * alpha ** (ii)
 	else:
 		B_a = B
